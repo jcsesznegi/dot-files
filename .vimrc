@@ -34,6 +34,11 @@ set foldlevel=1
 set smartcase
 set incsearch
 
+" explorer settings
+let g:netrw_banner=0
+let g:netrw_altv=1
+let g:netrw_liststyle=3
+
 " fix delete button behavior
 set backspace=indent,eol,start
 
@@ -56,7 +61,7 @@ set nowritebackup
 set autoread
 au CursorHold,CursorHoldI * checktime
 
-" keep 50 lines of command line history
+" keep 150 lines of command line history
 set history=150
 
 " show the cursor position all the time
@@ -77,6 +82,10 @@ set hlsearch
 " Key Mappings
 " ******************************************************************************
 map <Leader>e :Explore<cr>
+ 
+" smooth scroll
+map <C-U> <C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y>
+map <C-D> <C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E>
 
 " pressing < or > will let you indent/unident selected lines
 vnoremap < <gv
