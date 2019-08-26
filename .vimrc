@@ -79,6 +79,7 @@ syntax on
 set hlsearch
 
 " tpope/vim-surround
+" tpope/vim-abolish
 
 " ******************************************************************************
 " Key Mappings
