@@ -80,6 +80,7 @@ set hlsearch
 
 " tpope/vim-surround
 " tpope/vim-abolish
+" tpope/vim-commentary
 
 " ******************************************************************************
 " Key Mappings
