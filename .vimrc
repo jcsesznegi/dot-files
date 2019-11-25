@@ -9,7 +9,7 @@ filetype off                  " required
 filetype plugin on
 
 " file search
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+" set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " theme
 colorscheme jellybeans
@@ -80,6 +80,10 @@ let c_comment_strings=1
 " Also switch on highlighting the last used search pattern.
 syntax on
 set hlsearch
+
+" fzf
+set rtp+=~/.fzf
+nnoremap <C-p> :FZF<Cr>
 
 " tpope/vim-surround
 " tpope/vim-abolish
