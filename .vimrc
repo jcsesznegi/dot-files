@@ -46,7 +46,9 @@ let g:netrw_liststyle=3
 set backspace=indent,eol,start
 
 " fix tabs to use spaces
-set tabstop=2|set shiftwidth=2|set expandtab
+autocmd FileType html setlocal ts=4 sts=4 sw=4
+autocmd FileType python setlocal ts=4 sts=4 sw=4
+autocmd FileType javascript setlocal ts=2 sts=2 sw=2
 retab
 
 " set scss files to use tabs
