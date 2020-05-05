@@ -91,6 +91,11 @@ nnoremap <C-p> :FZF<Cr>
 " tpope/vim-abolish
 " tpope/vim-commentary
 " tpope/vim-unimpaired
+" godlygeek/tabular
+" plasticboy/vim-markdown
+
+" use concealing for markdown files
+autocmd FileType markdown set conceallevel=2
 
 " ******************************************************************************
 " Key Mappings
