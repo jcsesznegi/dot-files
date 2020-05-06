@@ -2,7 +2,7 @@
 " Version: 1
 " Author: Jason Csesznegi
 " Description: VIM configuration file
-" Updated: August 18 2019 
+" Updated: August 18 2019
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -22,11 +22,11 @@ let g:airline_theme='jellybeans'
 let g:indent_guides_enable_on_vim_startup = 1
 
 " paste toggle
-set pastetoggle=<f5> 
+set pastetoggle=<f5>
 
 " Pathogen
 execute pathogen#infect()
- 
+
 " folding
 set foldmethod=indent
 set foldnestmax=10
@@ -95,6 +95,8 @@ nnoremap <C-p> :FZF<Cr>
 " plasticboy/vim-markdown
 " AndrewRadev/splitjoin.vim
 " dense-analysis/ale
+" sheerun/vim-polyglot -- remove?
+" MaxMEllon/vim-jsx-pretty -- remove?
 
 " use concealing for markdown files
 autocmd FileType markdown set conceallevel=2
@@ -114,7 +116,7 @@ let g:ale_fix_on_save = 1
 " Key Mappings
 " ******************************************************************************
 map <Leader>e :Explore<cr>
- 
+
 " smooth scroll
 map <C-U> <C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y>
 map <C-D> <C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E>
@@ -128,20 +130,19 @@ vnoremap > >gv
 " Abbreviations
 " ******************************************************************************
 
-" abbreviation to manually enter a timestamp. Just type YTS in insert mode 
+" abbreviation to manually enter a timestamp. Just type YTS in insert mode
 
 iab YTS <C-R>=TimeStamp()<CR>
 
 " Date/Time stamps
 " %a - Day of the week
 " %b - Month
- 
+
 " %d - Day of the month
 " %Y - Year
 " %H - Hour
 " %M - Minute
 " %S - Seconds
 " %Z - Time Zone
- 
-iab YDATETIME <c-r>=strftime(": %a %b %d, %Y %H:%M:%S %Z")<cr>
 
+iab YDATETIME <c-r>=strftime(": %a %b %d, %Y %H:%M:%S %Z")<cr>
