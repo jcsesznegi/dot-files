@@ -93,9 +93,22 @@ nnoremap <C-p> :FZF<Cr>
 " tpope/vim-unimpaired
 " godlygeek/tabular
 " plasticboy/vim-markdown
+" AndrewRadev/splitjoin.vim
+" dense-analysis/ale
 
 " use concealing for markdown files
 autocmd FileType markdown set conceallevel=2
+
+" ale settings
+let g:ale_sign_error = '✘'
+let g:ale_sign_warning = '⚠'
+highlight ALEErrorSign ctermbg=red ctermfg=black
+highlight ALEWarningSign ctermbg=yellow ctermfg=black
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'javascript': ['prettier', 'eslint'],
+\}
+let g:ale_fix_on_save = 1
 
 " ******************************************************************************
 " Key Mappings
