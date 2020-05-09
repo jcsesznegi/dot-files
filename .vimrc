@@ -21,6 +21,9 @@ let g:airline_theme='jellybeans'
 " indent guides
 let g:indent_guides_enable_on_vim_startup = 1
 
+" do not highlight matched brackets on enter
+let g:loaded_matchparen = 1
+
 " paste toggle
 set pastetoggle=<f5>
 
@@ -95,8 +98,8 @@ nnoremap <C-p> :FZF<Cr>
 " plasticboy/vim-markdown
 " AndrewRadev/splitjoin.vim
 " dense-analysis/ale
-" sheerun/vim-polyglot -- remove?
-" MaxMEllon/vim-jsx-pretty -- remove?
+" jiangmiao/auto-pairs
+" mxw/vim-jsx
 
 " use concealing for markdown files
 autocmd FileType markdown set conceallevel=2
