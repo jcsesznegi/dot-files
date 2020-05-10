@@ -105,6 +105,7 @@ nnoremap <C-p> :FZF<Cr>
 autocmd FileType markdown set conceallevel=2
 
 " ale settings
+let g:ale_sign_column_always = 1
 let g:ale_sign_error = '✘'
 let g:ale_sign_warning = '⚠'
 highlight ALEErrorSign ctermbg=red ctermfg=black
