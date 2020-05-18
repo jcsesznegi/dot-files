@@ -98,7 +98,6 @@ nnoremap <C-p> :FZF<Cr>
 " plasticboy/vim-markdown
 " AndrewRadev/splitjoin.vim
 " dense-analysis/ale
-" jiangmiao/auto-pairs
 " mxw/vim-jsx
 
 " use concealing for markdown files
