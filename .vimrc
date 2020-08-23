@@ -128,6 +128,8 @@ map <C-D> <C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E>
 vnoremap < <gv
 vnoremap > >gv
 
+" remap ESC key
+imap jj <Esc>
 
 " ******************************************************************************
 " Abbreviations
