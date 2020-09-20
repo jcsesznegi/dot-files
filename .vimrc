@@ -151,3 +151,13 @@ iab YTS <C-R>=TimeStamp()<CR>
 " %Z - Time Zone
 
 iab YDATETIME <c-r>=strftime(": %a %b %d, %Y %H:%M:%S %Z")<cr>
+
+" ******************************************************************************
+" Other
+" ******************************************************************************
+
+" automatically open quickfix window after grep
+augroup AutoQuickfix
+	autocmd!
+	autocmd QuickFixCmdPost *grep* cwindow
+augroup END
