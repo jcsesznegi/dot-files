@@ -161,3 +161,8 @@ augroup AutoQuickfix
 	autocmd!
 	autocmd QuickFixCmdPost *grep* cwindow
 augroup END
+
+" Use C-d, C-u to navigate, C-c to close the quickfix list
+nnoremap <silent> <C-d> :<C-u>cnext<CR>
+nnoremap <silent> <C-u> :<C-u>cprev<CR>
+nnoremap <silent> <C-c> :<C-u>cclose<CR>
