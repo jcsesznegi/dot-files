@@ -90,6 +90,9 @@ set hlsearch
 set rtp+=~/.fzf
 nnoremap <C-p> :FZF<Cr>
 
+" allow pasting from system clipboard (* must use vim-gtk in Linux Mint)
+set clipboard=unnamedplus
+
 " tpope/vim-surround
 " tpope/vim-abolish
 " tpope/vim-commentary
@@ -99,6 +102,10 @@ nnoremap <C-p> :FZF<Cr>
 " AndrewRadev/splitjoin.vim
 " dense-analysis/ale
 " mxw/vim-jsx
+" ntpeters/vim-better-whitespace
+" nelstrom/vim-visual-star-search
+" leafgarland/typescript-vim
+" mattn/emmet-vim
 
 " use concealing for markdown files
 autocmd FileType markdown set conceallevel=2
@@ -163,6 +170,6 @@ augroup AutoQuickfix
 augroup END
 
 " Use C-d, C-u to navigate, C-c to close the quickfix list
-nnoremap <silent> <C-d> :<C-u>cnext<CR>
-nnoremap <silent> <C-u> :<C-u>cprev<CR>
-nnoremap <silent> <C-c> :<C-u>cclose<CR>
+" nnoremap <silent> <C-d> :<C-u>cnext<CR>
+" nnoremap <silent> <C-u> :<C-u>cprev<CR>
+" nnoremap <silent> <C-c> :<C-u>cclose<CR>
