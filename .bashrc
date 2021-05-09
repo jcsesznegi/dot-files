@@ -1,6 +1,8 @@
 alias clr='clear'
 alias ll='ls --group-directories-first -hl'
 alias la='ll -a'
+alias xc='xclip -selection clipboard'
+alias xp='xclip -selection clipboard -o'
 
 alias gst='git status -sb'
 alias gco='git checkout'
