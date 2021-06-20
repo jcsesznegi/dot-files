@@ -97,6 +97,7 @@ set clipboard=unnamedplus
 " tpope/vim-abolish
 " tpope/vim-commentary
 " tpope/vim-unimpaired
+" tpope/vim-vinegar
 " godlygeek/tabular
 " plasticboy/vim-markdown
 " AndrewRadev/splitjoin.vim
@@ -106,6 +107,8 @@ set clipboard=unnamedplus
 " nelstrom/vim-visual-star-search
 " leafgarland/typescript-vim
 " mattn/emmet-vim
+" jiangmiao/auto-pairs
+" pbrisbin/vim-mkdir
 
 " use concealing for markdown files
 autocmd FileType markdown set conceallevel=2
