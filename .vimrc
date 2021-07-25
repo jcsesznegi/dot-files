@@ -47,7 +47,7 @@ set splitbelow
 set splitright
 
 " split window on open
-autocmd VimEnter * vsplit
+" autocmd VimEnter * vsplit
 
 " ******************************************************************************
 " General
@@ -75,6 +75,8 @@ set backspace=indent,eol,start
 autocmd FileType html setlocal ts=4 sts=4 sw=4
 autocmd FileType python setlocal ts=4 sts=4 sw=4
 autocmd FileType javascript setlocal ts=2 sts=2 sw=2
+autocmd FileType javascript.jsx setlocal ts=2 sts=2 sw=2 et
+autocmd FileType tpl setlocal ts=2 sts=2 sw=2 et
 autocmd FileType scss setlocal ts=2 sts=2 sw=2 noet
 retab
 
@@ -185,6 +187,9 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <Leader>t :tabnew \| :vsplit<cr>
 nnoremap <Leader>tc :tabclose<cr>
 nnoremap <Leader>to :tabonly<cr>
+
+" change yank (Y) behavior to similar to change (C) and delete (D)
+nnoremap Y Y$
 
 " ******************************************************************************
 " Abbreviations
