@@ -98,8 +98,8 @@ set history=150
 set rtp+=~/.fzf
 nnoremap <C-p> :FZF<Cr>
 
-" allow pasting from system clipboard (* must use vim-gtk in Linux Mint)
-set clipboard=unnamedplus
+" allow pasting from system clipboard (* must use vim-gtk in Linux Mint, ONLY for Linux)
+" set clipboard=unnamedplus
 
 " use concealing for markdown files
 autocmd FileType markdown set conceallevel=2
@@ -108,7 +108,7 @@ autocmd FileType markdown set conceallevel=2
 set hidden
 
 " split window on open
-autocmd VimEnter * vsplit
+" autocmd VimEnter * vsplit
 
 " automatically open quickfix window after grep
 augroup AutoQuickfix
@@ -136,6 +136,7 @@ augroup END
 " mattn/emmet-vim
 " jiangmiao/auto-pairs
 " pbrisbin/vim-mkdir
+" junegunn/fzf
 
 " ale settings
 let g:ale_sign_column_always = 1
@@ -189,7 +190,7 @@ nnoremap <Leader>tc :tabclose<cr>
 nnoremap <Leader>to :tabonly<cr>
 
 " change yank (Y) behavior to similar to change (C) and delete (D)
-nnoremap Y Y$
+nnoremap Y y$
 
 " ******************************************************************************
 " Abbreviations
