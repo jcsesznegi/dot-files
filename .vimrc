@@ -83,6 +83,9 @@ retab
 " auto-indent
 set autoindent
 
+" number of characters before wrapping text
+set textwidth=80
+
 " set to write no backups
 set nobackup
 set nowritebackup
@@ -177,6 +180,12 @@ nnoremap <Leader>n :set relativenumber!<cr>
 " pressing < or > will let you indent/unident selected lines
 vnoremap < <gv
 vnoremap > >gv
+
+" center the viewport when moving up/down
+nnoremap <C-D> <C-D>zz
+nnoremap <C-U> <C-U>zz
+nnoremap <C-F> <C-F>zz
+nnoremap <C-B> <C-B>zz
 
 " windows
 nnoremap <C-J> <C-W><C-J>
