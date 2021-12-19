@@ -1,5 +1,6 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
+filetype plugin indent on
 filetype plugin on
 
 " leader map
@@ -82,9 +83,13 @@ retab
 
 " auto-indent
 set autoindent
+set smartindent
+set cindent
+set cinoptions=m1
 
 " number of characters before wrapping text
 set textwidth=80
+au BufRead,BufNewFile *.md setlocal textwidth=0
 
 " set to write no backups
 set nobackup
@@ -156,6 +161,10 @@ let g:ale_fix_on_save = 1
 " emmet settings
 let g:user_emmet_leader_key='<C-E>'
 
+" auto pairs
+let g:AutoPairsMultilineClose = 0
+let g:AutoPairsFlyMode = 0
+
 " ******************************************************************************
 " Key Mappings
 " ******************************************************************************
@@ -177,6 +186,9 @@ nnoremap <leader>s :source ~/.vimrc<CR>
 " toggle line numbers
 nnoremap <Leader>n :set relativenumber!<cr>
 
+" toggle paste
+set pastetoggle=<Leader>p
+
 " pressing < or > will let you indent/unident selected lines
 vnoremap < <gv
 vnoremap > >gv
@@ -194,7 +206,7 @@ nnoremap <C-H> <C-W><C-H>
 nnoremap <C-L> <C-W><C-L>
 
 " tabs
-nnoremap <Leader>t :tabnew \| :vsplit<cr>
+nnoremap <Leader>tn :tabnew \| :vsplit<cr>
 nnoremap <Leader>tc :tabclose<cr>
 nnoremap <Leader>to :tabonly<cr>
 
