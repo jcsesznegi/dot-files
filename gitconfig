@@ -19,3 +19,8 @@
 [user]
 	email = jcsesznegi@gmail.com
 	name = jcsesznegi
+[merge]
+	tool = vimdiff
+	conflictsytle = diff3
+[mergetool]
+	prompt = false
